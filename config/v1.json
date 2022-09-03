@@ -99,8 +99,7 @@
 											}
 										}
 									},
-									"additionalProperties": false,
-									"required": ["filter"]
+									"additionalProperties": false
 								}
 							}
 						},
