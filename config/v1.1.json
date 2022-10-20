@@ -91,9 +91,9 @@
 											"type": "string",
 											"description": "An expression that is evaluated by Regolith to decide whether the filter should be executed.",
 											"examples": [
-												"os == 'windows'",
-												"arch == 'amd64'",
-												"debug == true && version == '0.0.18'"
+												"os == \"windows\"",
+												"arch == \"amd64\"",
+												"debug == true && version == \"0.0.18\""
 											]
 										},
 										"settings": {
