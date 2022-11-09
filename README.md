@@ -25,6 +25,7 @@ schema to your `config.json`.
 
 ### v1.1
 - Added schema for the "when" property of the fileter
+- Added "requirements" property to the "filterDefinitoins"
 
 ### v1.0 (CURRENT)
 - Initial release used by Regolith 0.0.18

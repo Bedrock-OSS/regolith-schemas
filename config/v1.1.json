@@ -157,6 +157,10 @@
 									"exe": {
 										"type": "string",
 										"description": "The path to the executable - absolute or relative to the config.json file. Use only for the 'exe' filters."
+									},
+									"requirements": {
+										"type": "string",
+										"description": "The path to the folder with the requirements file (optional). For Python it's the path to the folder with \"requirements.txt\", for nim it's the path with the *.nimble file and for nodejs it's the path to the folder with \"package.json\". If not specified, Regolith uses the parent of the \"script\" property."
 									}
 								},
 								"additionalProperties": false
