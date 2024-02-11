@@ -22,10 +22,12 @@ schema to your `config.json`.
 
 
 ## Changelog
+### v1.2
+- Added the "RpName" and "BpName" name properties to the config.
 
 ### v1.1
 - Added schema for the "when" property of the fileter
 - Added "requirements" property to the "filterDefinitoins"
 
-### v1.0 (CURRENT)
+### v1.0
 - Initial release used by Regolith 0.0.18
