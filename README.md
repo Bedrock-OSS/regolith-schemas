@@ -1,7 +1,7 @@
 # regolith-schemas
 JSON schemas for Regolith files.
 
-# How does it work
+# How does it work. Versions 1.0 to 1.2
 The schemas are stored in separate folders, based on what type of file they
 describe (currently only `config` schemas are in the repository). In each
 folder, there are files with different versions of schemas named like:
@@ -20,8 +20,16 @@ Patches should be applied by updating the schema files.
 When you run `regolith init` command to create a new project, Regolith adds
 schema to your `config.json`.
 
+# How does it work. Versions 1.4 and later
+The version of the schema matches the version of Regolith. Version v1 will continue to be updated with the latest schema for Regolith v1.x.x.
 
 ## Changelog
+### v1.4
+- The schema version matches the Regolith version.
+- Changed the "export" configuration. The "target" property of the export can be "development", "world", "local", "exact" or "none"
+- The properties of the "export" change based on the "target".
+- The "development" and "world" targets have new property called "build" that defines which Minecraft build to export to - "education", "standard" or "preview".
+
 ### v1.2
 - Added the "RpName" and "BpName" name properties to the config.
 
