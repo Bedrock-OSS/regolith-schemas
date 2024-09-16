@@ -194,7 +194,7 @@
 								"properties": {
 									"url": {
 										"type": "string",
-										"description": "The URL to the reomte filter."
+										"description": "The URL to the remote filter."
 									},
 									"version": {
 										"type": "string",
