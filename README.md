@@ -25,6 +25,7 @@ The version of the schema matches the version of Regolith. Version v1 will conti
 
 ## Changelog
 ### v1.4
+- Fixed url issue on the bpName and rpName
 - The schema version matches the Regolith version.
 - Changed the "export" configuration. The "target" property of the export can be "development", "world", "local", "exact" or "none"
 - The properties of the "export" change based on the "target".
