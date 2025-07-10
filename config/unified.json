@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "description": "Regolith config.json (wrapper schema)",
+  "properties": {
+    "name":   { "type": "string", "description": "Project name." },
+    "author": { "type": "string", "description": "Author." },
+    "packs": {
+      "type": "object",
+      "properties": {
+        "behaviorPack": { "type": "string" },
+        "resourcePack": { "type": "string" }
+      }
+    },
+    "regolith": {
+      "if": {
+        "properties": { "formatVersion": { "const": "1.4.0" } },
+        "required"   : ["formatVersion"]
+      },
+      "then": { "$ref": "v1.4.json#/properties/regolith" },
+      "else": { "$ref": "v1.2.json#/properties/regolith" }
+    }
+  },
+  "additionalProperties": true
+}
