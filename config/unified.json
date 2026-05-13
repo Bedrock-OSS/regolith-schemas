@@ -14,23 +14,30 @@
 		},
 		"regolith": {
 			"if": {
-				"properties": { "formatVersion": { "const": "1.7.0" } },
+				"properties": { "formatVersion": { "const": "1.8.0" } },
 				"required": [ "formatVersion" ]
 			},
-			"then": { "$ref": "v1.7.json#/properties/regolith" },
+			"then": { "$ref": "v1.8.json#/properties/regolith" },
 			"else": {
 				"if": {
-					"properties": { "formatVersion": { "const": "1.6.0" } },
+					"properties": { "formatVersion": { "const": "1.7.0" } },
 					"required": [ "formatVersion" ]
 				},
-				"then": { "$ref": "v1.6.json#/properties/regolith" },
+				"then": { "$ref": "v1.7.json#/properties/regolith" },
 				"else": {
 					"if": {
-						"properties": { "formatVersion": { "const": "1.4.0" } },
+						"properties": { "formatVersion": { "const": "1.6.0" } },
 						"required": [ "formatVersion" ]
 					},
-					"then": { "$ref": "v1.4.json#/properties/regolith" },
-					"else": { "$ref": "v1.2.json#/properties/regolith" }
+					"then": { "$ref": "v1.6.json#/properties/regolith" },
+					"else": {
+						"if": {
+							"properties": { "formatVersion": { "const": "1.4.0" } },
+							"required": [ "formatVersion" ]
+						},
+						"then": { "$ref": "v1.4.json#/properties/regolith" },
+						"else": { "$ref": "v1.2.json#/properties/regolith" }
+					}
 				}
 			}
 		}
