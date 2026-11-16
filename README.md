@@ -24,6 +24,10 @@ schema to your `config.json`.
 The version of the schema matches the version of Regolith. Version v1 will continue to be updated with the latest schema for Regolith v1.x.x.
 
 ## Changelog
+### v1.9
+- Added support for filters installed from npm registries. Their definitions in "filterDefinitions" use the "npm" property (the name of the package) instead of "url", and their "version" can be an exact version, a semantic version range or a dist-tag like "latest".
+- Added the "venvSlot" property to the filter definitions.
+
 ### v1.8
 - The "export" property of a profile can now be an array of export targets, in addition to a single object. This makes it possible to export a project to multiple locations in one run.
 - Added "bun" to the valid "runWith" values of the filter definitions.
