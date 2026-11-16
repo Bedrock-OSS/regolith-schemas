@@ -24,6 +24,19 @@ schema to your `config.json`.
 The version of the schema matches the version of Regolith. Version v1 will continue to be updated with the latest schema for Regolith v1.x.x.
 
 ## Changelog
+### v1.8
+- The "export" property of a profile can now be an array of export targets, in addition to a single object. This makes it possible to export a project to multiple locations in one run.
+- Added "bun" to the valid "runWith" values of the filter definitions.
+- Moved the export target schema to the "definitions" section and referenced it with "$ref".
+
+### v1.7
+- Added the "asyncFilters" property to the filters of a profile. The filters in it run in parallel.
+- Added the "extraArguments" property to the filters of a profile. It controls how the command line arguments passed to Regolith merge with the "arguments" property ("ignore", "override" or "append").
+- Added the "preShell" and "postShell" properties to profiles. They run shell commands before and after the filters and can be a list of commands or an object with commands per operating system.
+
+### v1.6
+- Added the "watchPaths" property to the "regolith" object. It lists additional paths that Regolith watches in the watch mode to trigger a project compilation.
+
 ### v1.4
 - Fixed url issue on the bpName and rpName
 - The schema version matches the Regolith version.
